@@ -20,6 +20,7 @@ fn main() {
     match problem_index {
         1 => solutions::problem001::solution(),
         2 => solutions::problem002::solution(),
+        3 => solutions::problem003::solution(),
         _ => println!("Problem {} not yet solved :(", problem_index),
     }
 }
