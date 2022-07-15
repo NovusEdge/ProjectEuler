@@ -15,4 +15,4 @@ if __name__ == "__main__":
     end = time() - start
 
     print(f"\nAnswer for Problem 3: {answer}")
-    print( f"Time Taken          : {end}\n")
+    print( f"Time Taken: {end} seconds\n")

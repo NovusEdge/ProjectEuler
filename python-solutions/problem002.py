@@ -21,4 +21,4 @@ if __name__ == "__main__":
     start  = time()
     answer = solution()
     print(f"\nAnswer to Problem 2: {answer}")
-    print(f"Time Taken         : {time()-start} seconds\n")
+    print(  f"Time Taken: {time()-start} seconds\n")
