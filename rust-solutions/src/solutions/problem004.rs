@@ -15,6 +15,22 @@ fn compute() -> i32 {
         .unwrap()
 }
 
+#[allow(dead_code)] // Sometimes, simpler is better
+fn faster_compute() -> i32 {
+    let mut nums: Vec<i32> = Vec::new();
+    for i in 100..1000 {
+        for j in 100..1000 {
+            if is_pallindrome(i*j) {
+                nums.push(i*j)
+            }
+        }
+    }
+
+    nums.into_iter()
+        .max()
+        .unwrap()
+}
+
 fn is_pallindrome(n: i32) -> bool {
     let num_str: String = format!("{:?}", n);
     let reversed = num_str
