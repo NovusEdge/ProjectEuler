@@ -25,6 +25,7 @@ fn main() {
         5 => solutions::problem005::solution(),
         6 => solutions::problem006::solution(),
         7 => solutions::problem007::solution(),
+        8 => solutions::problem008::solution(),
         _ => println!("Problem {} not yet solved :(", problem_index),
     }
 }
