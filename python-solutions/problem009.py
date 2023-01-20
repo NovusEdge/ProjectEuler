@@ -12,5 +12,5 @@ if __name__ == "__main__":
     answer = compute()
     end = time() - start
 
-    print(f"\nAnswer for Problem 8: {answer}")
+    print(f"\nAnswer for Problem 9: {answer}")
     print( f"Time Taken: {end} seconds\n")
