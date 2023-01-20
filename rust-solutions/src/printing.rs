@@ -4,5 +4,5 @@ pub fn pretty_print_solution<T: std::fmt::Display>(f: fn() -> T, problem_index: 
     let elapsed = now.elapsed();
 
     println!("\nAnswer to Problem {}: {}", problem_index, answer);
-    println!("Time Taken         : {:?}\n", elapsed);
+    println!("Time Taken: {:?}\n", elapsed);
 }
