@@ -25,13 +25,13 @@ fn compute() -> u64 {
              84580156166097919133875499200524063689912560717606\
              05886116467109405077541002256983155200055935729725\
              71636269561882670428252483600823257530420752963450";
-    
+
     let mut max = 0;
 
-    for i in 0..n.len()-13 {
-        let d_prod = product_digits(n[i..i+13].to_string());
+    for i in 0..n.len() - 13 {
+        let d_prod = product_digits(n[i..i + 13].to_string());
         if max < d_prod {
-            max = d_prod; 
+            max = d_prod;
         }
     }
     max
@@ -40,8 +40,8 @@ fn compute() -> u64 {
 fn product_digits(num: String) -> u64 {
     let mut product: u64 = 1;
     for n in num.as_str().chars().map(|c| c.to_digit(10).unwrap()) {
-            product *= n as u64
-        }
+        product *= n as u64
+    }
 
     product
 }

@@ -1,21 +1,19 @@
 pub mod printing;
 pub mod solutions;
 
-use std::io::{stdin,stdout,Write};
+use std::io::{stdin, stdout, Write};
 
-fn main() { 
+fn main() {
     println!("Project Euler Solutions with rust!");
     print!("Enter Problem number: ");
-    let _=stdout().flush();
+    let _ = stdout().flush();
 
     let mut input = String::new();
-    stdin().read_line(&mut input)
-           .ok()
-           .expect("Failed to read input");
-    let problem_index: i32 = input
-        .trim()
-        .parse()
-        .expect("Invalid Problem Number"); 
+    stdin()
+        .read_line(&mut input)
+        .ok()
+        .expect("Failed to read input");
+    let problem_index: i32 = input.trim().parse().expect("Invalid Problem Number");
 
     match problem_index {
         1 => solutions::problem001::solution(),
@@ -26,6 +24,7 @@ fn main() {
         6 => solutions::problem006::solution(),
         7 => solutions::problem007::solution(),
         8 => solutions::problem008::solution(),
+        9 => solutions::problem009::solution(),
         _ => println!("Problem {} not yet solved :(", problem_index),
     }
 }
